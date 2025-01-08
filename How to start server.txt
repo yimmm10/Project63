@@ -1,8 +1,22 @@
+
+How to start server
+
+1. open command prompt
+2. cd Project63 (Location of your file na)
+3. type: npm install
+4. type: npm start
+
+
+** if your has error **
 for frontend
-use:http-server -c-1 -p 8080 -o ./pages/longin.html
+1.cd Project63/frontend
+2.type: npm install
+3.use:http-server -c-1 -p 8080 -o ./pages/longin.html
 
 for backend
-use:node server.js
+1.cd Project63/backend
+2.type: npm install
+3.use:node server.js
 
-bou
-use: npm start
+
+
