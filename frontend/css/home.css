@@ -1,0 +1,151 @@
+/* Reset styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar {
+    flex: 1;
+    margin: 0 400px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+
+.content {
+    display: flex;
+    padding: 20px;
+    margin-top: 20px; /* เพิ่มระยะห่างจาก header */
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.header-actions {
+    margin-left: 1690px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px; /* เพิ่มระยะห่างจากหัวข้อ */
+}
+
+.header-actions .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.btn-primary {
+    background-color: #333;
+}
+
+.btn-primary:hover {
+    background-color: #555;
+}
+
+
+.project-list {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.project-item {
+    margin-bottom: 20px;
+}
+
+.project-name {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.crown {
+    margin-right: 8px;
+}
+
+.progress-bar {
+    background-color: #e3e3e3;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.progress {
+    height: 8px;
+    background-color: #ffa500;
+    border-radius: 4px;
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.tags {
+    display: flex;
+    gap: 5px;
+}
+
+.tag {
+    padding: 2px 5px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.tag-secondary {
+    background-color: #ffe0b2;
+}
+
+.priority {
+    padding: 2px 5px;
+    background-color: #63c45b;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.people-icon {
+    margin-left: 20px;
+}
+
+.pro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}

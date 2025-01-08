@@ -1,0 +1,8 @@
+for frontend
+use:http-server -c-1 -p 8080 -o ./pages/longin.html
+
+for backend
+use:node server.js
+
+bou
+use: npm start

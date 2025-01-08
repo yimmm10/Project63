@@ -1,0 +1,15 @@
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "description": "A project with frontend and backend",
+  "main": "server.js",
+  "scripts": {
+    "start:frontend": "http-server ./frontend -c-1 -p 8080 -o ./pages/longin.html",
+    "start:backend": "node server.js",
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "dependencies": {}
+}

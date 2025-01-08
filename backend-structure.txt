@@ -1,0 +1,10 @@
+
+โครงสร้าง ของ backend
+
+project-management-backend/
+├── server.js
+├── routes/
+│   └── auth.js
+├── models/
+│   └── User.js
+├── .env

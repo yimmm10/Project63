@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.search-bar {
+    flex: 1;
+    margin: 0 400px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.header-actions  {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+.btn{
+color: #ffffff;
+    background-color: #000000;
+}
+
+.btn-primary {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.btn-primary:hover {
+    background-color: #000000;
+}
+
+/*  Menu */
+.manu {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: #000000;
+    padding: 10px;
+    height: 100vh; /* ครอบคลุมความสูงเต็มจอ */
+}
+
+.manu-tab {
+    padding: 15px 10px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #000000; /* สีพื้นหลังปกติ */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.manu-tab:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.manu-tab1{
+    padding: 15px 10px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    background-color: #ffffff; /* สีพื้นหลังปกติ */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}

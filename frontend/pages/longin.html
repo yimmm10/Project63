@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/longin.css">
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_AUTH_DOMAIN",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_STORAGE_BUCKET",
+            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+    <img src="../logo.png" alt="Trulli" width="70" height="70" class="logo">
+
+    <div class="form">
+        <p class="title">Login</p>
+        <form action="home.html" method="get">
+            <label for="name">Email/Username</label><br>
+            <input type="text" type="email" id="email"  id="username" placeholder="Enter your Gmail" class="input"> <br>
+
+            <label for="name">Password</label><br>
+            <input type="password" id="password"  placeholder="Enter your password" class="input"> <br>
+
+            <input type="submit" value="Log in" class="submit-btn">
+        </form>
+
+        <a href="Fpassword.html" class="link">Forgot password?</a> <br>
+        <a href="newaccount.html" class="link">Create account now!</a>
+    </div>
+
+    <script>
+        const auth = firebase.auth();
+    
+        document.querySelector("form").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            
+            const email = document.querySelector("input[type='text']").value;
+            const password = document.querySelector("input[type='password']").value;
+    
+            try {
+                const userCredential = await auth.signInWithEmailAndPassword(email, password);
+                alert("Login successful!");
+                window.location.href = "home.html"; // Redirect to home
+            } catch (error) {
+                alert(error.message);
+                console.error("Error during login: ", error);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
