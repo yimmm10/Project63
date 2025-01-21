@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../css/profile.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="home.html" class="back-btn"><i class="fas fa-arrow-left"></i></a>
+        <h1>Profile</h1>
+    </header>
+    <main class="content">
+        <section class="profile-info">
+            <h2>Welcome, User</h2>
+            <button class="btn-logout" onclick="logout()">Logout</button>
+        </section>
+    </main>
+
+    <script>
+        function logout() {
+            // Clear user session (example using localStorage)
+            localStorage.removeItem('user');
+            
+            // Redirect to the login page
+            window.location.href = 'longin.html';
+        }
+    </script>
+</body>
+</html>

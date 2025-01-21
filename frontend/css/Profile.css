@@ -19,6 +19,15 @@ body {
     text-decoration: none;
 }
 
-.settings-options {
+.profile-info {
     padding: 20px;
+}
+
+.btn-logout {
+    background-color: #f00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

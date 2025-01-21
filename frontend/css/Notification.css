@@ -19,6 +19,14 @@ body {
     text-decoration: none;
 }
 
-.settings-options {
-    padding: 20px;
+.notification-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.notification-table th, .notification-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
 }

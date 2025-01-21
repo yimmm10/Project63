@@ -1,0 +1,34 @@
+<!-- create_project.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Project</title>
+    <link rel="stylesheet" href="../css/create_project.css">
+    <script defer src="../js/create_project.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="home.html" class="btn btn-back">← Back</a>
+        <h1>Create New Project</h1>
+    </header>
+    <main>
+        <form id="createProjectForm">
+            <label for="projectName">Project Name*</label>
+            <input type="text" id="projectName" name="projectName" required>
+            
+            <label for="description">Description</label>
+            <textarea id="description" name="description"></textarea>
+            
+            <label for="startDate">Start Date*</label>
+            <input type="date" id="startDate" name="startDate" required>
+            
+            <label for="endDate">End Date*</label>
+            <input type="date" id="endDate" name="endDate" required>
+            
+            <button type="submit">Create</button>
+        </form>
+    </main>
+</body>
+</html>
